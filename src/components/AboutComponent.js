@@ -2,18 +2,20 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+//Task 2 below
+
 function RenderPartner({partner}) {
         if (partner){
             return(
                 <React.Fragment>
-                    <Media object src={partner.image} alt={partner.name} width="150"></Media>
+                    <Media object src={partner.image} alt={partner.name} width="150px"></Media>
                     <Media body className="ml-5 mb-4" >
                         <Media heading>
                             {partner.name}
                         </Media>
                         {partner.description}
                     </Media>
-                </React.Fragment>
+                    </React.Fragment>
             )
         }else{
             return(<div></div>)
@@ -21,7 +23,7 @@ function RenderPartner({partner}) {
 }
 function About(props) {
 
-   
+   //task 3
     const partners = props.partners.map(partner => {
         return (
             <Media tag="li">
