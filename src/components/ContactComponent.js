@@ -76,7 +76,7 @@ class Contact extends Component {
                     </div>
                     <div className="col-md-10">
                     <LocalForm onSubmit={values => this.handleSubmit(values)}>
-                            <Row className="form-group">
+                            <div className="form-group">
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
                                 <Col md={10}>
                                     <Control.text model=".firstName" id="firstName" name="firstName"
@@ -101,7 +101,7 @@ class Contact extends Component {
                                         }}
                                     /> 
                                 </Col>
-                            </Row>
+                            </div>
                             <Row className="form-group">
                                 <Label htmlFor="lastName" md={2}>Last Name</Label>
                                 <Col md={10}>
